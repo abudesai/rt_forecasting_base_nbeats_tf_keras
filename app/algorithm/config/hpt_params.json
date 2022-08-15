@@ -1,0 +1,36 @@
+[
+  {
+    "name": "max_hist_len_multiple_of_fcst_len",
+    "short_desc": "Multiplier that determines max length of history for training. Value = 3 means history_len is 3x fcst_len.",
+    "default": 4,
+    "type": "int",
+    "range_low": 3,
+    "range_high": 6,
+    "search_type": "uniform",
+    "run_HPO": true
+  },
+  {
+    "name": "thetas_dim",
+    "short_desc": "Thetas (coefficients of expansion) per stack in Nbeats model. Set up to be same for all stacks.",
+    "default": 8,
+    "type": "categorical",
+    "categorical_vals": [4, 8, 12, 16, 20],
+    "run_HPO": false
+  },
+  {
+    "name": "hidden_layer_units",
+    "short_desc": "hidden_layer_units",
+    "default": 48,
+    "type": "categorical",
+    "categorical_vals": [16, 32, 48, 64],
+    "run_HPO": false
+  },
+  {
+    "name": "share_weights_in_stack",
+    "short_desc": "share_weights_in_stack",
+    "default": false,
+    "type": "categorical",
+    "categorical_vals": [true, false],
+    "run_HPO": false
+  }
+]

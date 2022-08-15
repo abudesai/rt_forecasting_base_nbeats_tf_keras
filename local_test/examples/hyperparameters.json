@@ -1,0 +1,6 @@
+{
+  "max_hist_len_multiple_of_fcst_len": 4,
+  "thetas_dim": 8,
+  "hidden_layer_units": 48,
+  "share_weights_in_stack": false
+}
